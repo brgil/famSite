@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="rosita.css">
+	<title>Rosita Travels</title>
+
+</head>
+
+<html>
+
+<body>
+
+	<div style="text-align: center; ">
+		<img src="images/rosita.png" alt="Rosita" class="rosita">
+	</div>
+
+	<div class="btn-group dropup">
+		<button type="button" class="travelbtn hvr-radial-out" data-toggle="dropdown" aria-haspopup="true"
+			aria-expanded="false">
+			Let's Travel!
+		</button>
+		<div class="dropdown-menu">
+			<ul class="dropul">
+				<li><button onclick="changeBg('paradise.jpg');">Bahamas</button></li>
+				<li><button onclick="changeBg('forest.jpg');">Forest</button></li>
+				<li><button onclick="changeBg('snow.jpg');">Snow</button></li>
+				<li><button onclick="changeBg('mountains.jpg');">Mountains</button></li>
+				<li><button onclick="changeBg('favela.jpg');">Brasil</button></li>
+				<li><button onclick="changeBg('machupicchu.jpg');">Peru</button></li>
+				<li><button onclick="changeBg('japan.jpg');">Japan</button></li>
+				<li><button onclick="changeBg('africa.jpg');">Africa</button></li>
+				<li><button onclick="changeBg('lisbon.jpg');">Portugal</button></li>
+				<li><button onclick="changeBg('moscow.jpg');">Russia</button></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<script> /* Javascript */
+
+		function changeBg(background) {
+			document.body.style.backgroundImage = "url('./images/wallpapers/" + background + "')";
+
+		}
+
+		function bg(background) { /* DELETE THIS */
+			document.body.style.backgroundImage = "url(" + background + ")";
+
+		}
+
+	</script>
+
+
+</body>
+
+</html>
