@@ -8,6 +8,7 @@
 
 	<!-- CSS --> 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="rosita.css">
 
 	<!-- Javascript -->
@@ -22,16 +23,25 @@
 <html>
 
 <body>
-
+	
 	<div style="text-align: center; ">
 		<img src="images/rosita.png" alt="Rosita" class="rosita">
 	</div>
+	
+	<!-- Back home Button-->
+	<div class="homebtn">
+		
+		<button onclick="changeBg('default.jpg');"> <i class="fa fa-home"></i> </button>
 
+	</div>
+
+	<!-- Travel Button-->
 	<div class="btn-group dropup">
 		<button type="button" class="travelbtn hvr-radial-out" data-toggle="dropdown" aria-haspopup="true"
 			aria-expanded="false">
-			Let's Travel!
+			Let's Travel! <i class="fa fa-plane"></i>
 		</button>
+
 		<div class="dropdown-menu">
 			<ul class="dropul">
 				<li><button onclick="changeBg('paradise.jpg');">Bahamas</button></li>

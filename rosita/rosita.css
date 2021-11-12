@@ -51,12 +51,28 @@ li:hover {
   left: 0;
   padding: 5px 16px; 
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
   border-style: solid;
   background-color: white;
 
   border-radius: 5px;
 }
+
+.homebtn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0; 
+  text-decoration: none;
+  font-size: 22px;
+  border-style: solid;
+  background-color: #ffffff77;
+  border-radius: 5px;
+  
+}
+
+
+
 
 /* Radial Out Effect  credit: github.com/IanLunn/Hover */
 .hvr-radial-out {
