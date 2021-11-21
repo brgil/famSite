@@ -1,0 +1,40 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgrey;
+    
+}
+
+svg path {
+    fill: slategray;
+    stroke: #eee;
+    stroke-width: .25;
+
+}
+
+/* 
+svg path:hover {
+    fill: orange;
+    transition: 0.6s;
+    cursor: pointer;
+} */
+
+.clickable {
+    fill: darkgrey;
+}
+
+.clickable:hover {
+    fill: lawngreen;
+}
+
+.Angola {
+    fill:red;
+}
+
+#BY {
+    fill: green;
+}
