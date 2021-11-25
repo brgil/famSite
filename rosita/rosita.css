@@ -23,13 +23,6 @@ svg path {
 
 }
 
-/* --On any countries hover--
-
-svg path:hover {
-    fill: orange;
-    transition: 0.6s;
-    cursor: pointer;
-} */
 
 .rosita {
     z-index: 1;
@@ -57,12 +50,15 @@ svg path:hover {
 }
 
 
+
+
 .clickable {
     fill: darkgrey;
 }
 
 .clickable:hover {
     fill: lawngreen;
+    transition: 0.6s;
     cursor: pointer;
 }
 
