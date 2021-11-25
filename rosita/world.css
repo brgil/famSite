@@ -5,18 +5,19 @@
 }
 
 body {
-    background-color: lightgrey;
+    background-color: #708090;
     
 }
 
 svg path {
-    fill: slategray;
+    fill: #4b4b4b;
     stroke: #eee;
     stroke-width: .25;
 
 }
 
-/* 
+/* --On any countries hover--
+
 svg path:hover {
     fill: orange;
     transition: 0.6s;
@@ -29,6 +30,7 @@ svg path:hover {
 
 .clickable:hover {
     fill: lawngreen;
+    cursor: pointer;
 }
 
 .Angola {
