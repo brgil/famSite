@@ -1,117 +1,76 @@
+
 * {
-	font-family: Arial, Helvetica, sans-serif;
-  user-select: none;
+    margin: 0;
+    padding: 0;
 }
 
+body, html {
+    background-image: url("images/wallpapers/default.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    background-color: #708090;
+  }
 
-body {
-  background-image: url("images/wallpapers/default.jpg"); /* DEFAULT BACKGROUND */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
+
+
+svg path {
+    fill: #4b4b4b;
+    stroke: rgb(0, 0, 0);
+    stroke-width: .50;
+
 }
+
+/* --On any countries hover--
+
+svg path:hover {
+    fill: orange;
+    transition: 0.6s;
+    cursor: pointer;
+} */
 
 .rosita {
-	max-height: 100vh;
-  position:relative;
-  bottom: 0;
+    z-index: 1;
+    position: relative;
+    max-height: 100vh;
+    display: block;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;    
+    user-select: none;
 }
 
-/* for wallpaper picker dropdown */
-button {
-  border-style: none;
-  background: none;
-}
-
-.dropul {
-  list-style-type: none; 
-  padding-left: 0px; 
-  text-align: center;
-  font-size: 20px;
-}
-
-
-
-li {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-/* Change the color of links on hover */
-li:hover {
-  background-color: lightblue;
-  color: black;
-}
-
-.travelbtn {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  padding: 5px 16px; 
-  text-decoration: none;
-  font-size: 20px;
-  border-style: solid;
-  background-color: white;
-
-  border-radius: 5px;
-}
-
-.homebtn {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 0; 
-  text-decoration: none;
-  font-size: 22px;
-  border-style: solid;
-  background-color: #ffffff77;
-  border-radius: 5px;
+.toMapButton {
+    position: absolute;
+    z-index: 2;
+    bottom: 10%;
+    left: 10%;
+    padding: 5px 16px; 
+    text-decoration: none;
+    font-size: 20px;
+    border-style: solid;
+    background-color: white;
   
+    border-radius: 5px;
 }
 
 
+.clickable {
+    fill: darkgrey;
+}
 
+.clickable:hover {
+    fill: lawngreen;
+    cursor: pointer;
+}
 
-/* Radial Out Effect  credit: github.com/IanLunn/Hover */
-.hvr-radial-out {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  overflow: hidden;
-  background: #e1e1e1;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+/*
+.Angola {
+    fill:red;
 }
-.hvr-radial-out:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #2098D1;
-  border-radius: 100%;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
-  color: white;
-}
-.hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
-  -webkit-transform: scale(2);
-  transform: scale(2);
-}
-/* End Radial Out effect */
+
+#BY {
+    fill: green;
+} */
