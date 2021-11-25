@@ -45,11 +45,28 @@ svg path {
     font-size: 20px;
     border-style: solid;
     background-color: white;
-  
+    cursor: pointer;
     border-radius: 5px;
 }
 
+.toMapButton:hover {
+    animation: colorChange 5s infinite;
+    background-color: lightskyblue;
+}
 
+@keyframes colorChange {
+    0%   {background-color: lightskyblue;}
+    25%  {background-color: lightseagreen;}
+    50%  {background-color: #0084ff;}
+    75%  {background-color: lightseagreen;}
+    100% {background-color: lightskyblue;}
+  }
+
+
+@keyframes colorChange2 {
+    from {background-color: white;}
+    to {background-color: lightskyblue;}
+  }
 
 
 .clickable {
@@ -61,12 +78,3 @@ svg path {
     transition: 0.6s;
     cursor: pointer;
 }
-
-/*
-.Angola {
-    fill:red;
-}
-
-#BY {
-    fill: green;
-} */
