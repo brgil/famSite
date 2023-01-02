@@ -24,7 +24,7 @@ svg path {
 }
 
 
-.rosita {
+#plushie {
     z-index: 1;
     position: relative;
     max-height: 100vh;
@@ -35,7 +35,11 @@ svg path {
     user-select: none;
 }
 
-.toMapButton {
+#mapSvg {
+    display: none;
+}
+
+#toMapButton {
     position: absolute;
     z-index: 2;
     bottom: 10%;
@@ -49,23 +53,34 @@ svg path {
     border-radius: 5px;
 }
 
-.toMapButton:hover {
-    animation: colorChange 5s infinite;
+
+
+#toMapButton:hover {
+    animation: colorChange 1s infinite;
     background-color: lightskyblue;
 }
 
+
+
+
 @keyframes colorChange {
     0%   {background-color: lightskyblue;}
-    25%  {background-color: lightseagreen;}
-    50%  {background-color: #0084ff;}
-    75%  {background-color: lightseagreen;}
+    50%  {background-color: #66d8f5;}
     100% {background-color: lightskyblue;}
   }
 
-
-@keyframes colorChange2 {
+  @keyframes colorChange2 {
     from {background-color: white;}
     to {background-color: lightskyblue;}
+  }
+
+@keyframes driftButton {
+    0%   {left: 10%; transform: rotate(0deg);}
+    20%  {bottom: 11%;transform: rotate(5deg);}
+    40%  {left:9%;transform: rotate(-5deg);}
+    60%  {bottom:9%;transform: rotate(5deg);}
+    80%  {bottom:10%;transform: rotate(-5deg);}
+    100% {left:10%;transform: rotate(0deg);}
   }
 
 
