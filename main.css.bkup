@@ -1,0 +1,38 @@
+@font-face {
+    font-family: ubuntuBold;
+    src: url(fonts/Ubuntu-Bold.ttf);
+}
+
+* {
+    user-select: none;
+}
+
+body{
+    background: url("images/wallpaper.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title{
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    font-family: ubuntuBold, sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+
+}
+
+#startbtn{
+    color: white;
+    background-color: darkgreen;
+    font-family: ubuntuBold, sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+}

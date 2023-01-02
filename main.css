@@ -2,24 +2,41 @@
     font-family: ubuntuBold;
     src: url(fonts/Ubuntu-Bold.ttf);
 }
-
 * {
+    margin: 0;
+    padding: 0;
     user-select: none;
+
 }
 
-body{
-    background: url("images/wallpaper.jpg") no-repeat center fixed;
+body, html {
+    background-image: url("images/wallpapers/default.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+    margin: 0;
+    background-color: #708090;
+  }
+
+
+
+svg path {
+    fill: #4b4b4b;
+    stroke: rgb(0, 0, 0);
+    stroke-width: .50;
+
 }
 
-div {
+#introdiv {
     position: fixed;
+    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.title{
+#title{
     font-size: 70px;
     color: rgb(255, 255, 255);
     font-family: ubuntuBold, sans-serif;
@@ -35,4 +52,76 @@ div {
     border-radius: 10px;
     padding: 10px;
     text-decoration: none;
+}
+
+
+#plushie {
+    z-index: 1;
+    position: relative;
+    max-height: 100vh;
+    display: none;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;    
+    user-select: none;
+}
+
+#mapSvg {
+    display: none;
+}
+
+#toMapButton {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    bottom: 10%;
+    left: 10%;
+    padding: 5px 16px; 
+    text-decoration: none;
+    font-size: 20px;
+    border-style: solid;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+#toMapButton:hover {
+    animation: colorChange 1s infinite;
+    background-color: lightskyblue;
+}
+
+
+
+
+@keyframes colorChange {
+    0%   {background-color: lightskyblue;}
+    50%  {background-color: #66d8f5;}
+    100% {background-color: lightskyblue;}
+  }
+
+  @keyframes colorChange2 {
+    from {background-color: white;}
+    to {background-color: lightskyblue;}
+  }
+
+@keyframes driftButton {
+    0%   {left: 10%; transform: rotate(0deg);}
+    20%  {bottom: 11%;transform: rotate(5deg);}
+    40%  {left:9%;transform: rotate(-5deg);}
+    60%  {bottom:9%;transform: rotate(5deg);}
+    80%  {bottom:10%;transform: rotate(-5deg);}
+    100% {left:10%;transform: rotate(0deg);}
+  }
+
+
+.clickable {
+    fill: darkgrey;
+}
+
+.clickable:hover {
+    fill: lawngreen;
+    transition: 0.6s;
+    cursor: pointer;
 }
