@@ -1,8 +1,9 @@
 function goHome() {
 
-    document.body.style.backgroundImage = "none";
+    document.body.style.backgroundImage = "url('./images/homeInside.jpg')";
+    document.querySelector("#introdiv").style.display = "none";
     document.querySelector("#mapSvg").style.display = "none";
-    document.querySelector("#plushie").style.display = "block";
+    document.querySelector("#plushie").style.display = "none";
     document.querySelector("#toMapButton").style.display = "block";
 
 }
@@ -19,7 +20,7 @@ function toMap() {
 function travel(location) {
 
     document.querySelector("#mapSvg").style.display = "none";
-    document.body.style.backgroundImage = "url('./images/wallpapers/" + location + "')";
+    document.body.style.backgroundImage = "url('./images/countries/" + location + "')";
     document.querySelector("#plushie").style.display = "block";
     document.querySelector("#toMapButton").style.display = "block";
 }
