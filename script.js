@@ -3,7 +3,7 @@ function goHome() {
     document.body.style.backgroundImage = "url('./images/homeInside.jpg')";
     document.querySelector("#introdiv").style.display = "none";
     document.querySelector("#mapSvg").style.display = "none";
-    document.querySelector("#plushie").style.display = "none";
+    document.querySelector("#plushie").style.display = "block";
     document.querySelector("#toMapButton").style.display = "block";
 
 }

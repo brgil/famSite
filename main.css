@@ -28,6 +28,24 @@ svg path {
 
 }
 
+/* ID's */
+
+#plushie {
+    z-index: 1;
+    position: fixed;
+    max-height: 70vh;
+    display: none;
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
+    margin-left: auto;
+    margin-right: auto;
+    user-select: none;
+}
+
+
+
+
 #introdiv {
     position: fixed;
     text-align: center;
@@ -45,31 +63,6 @@ svg path {
 
 }
 
-#startbtn{
-    color: white;
-    background-color: darkgreen;
-    font-family: ubuntuBold, sans-serif;
-    border-radius: 10px;
-    padding: 10px;
-    text-decoration: none;
-}
-
-
-#plushie {
-    z-index: 1;
-    position: relative;
-    max-height: 100vh;
-    display: none;
-    bottom: 0;
-    margin-left: auto;
-    margin-right: auto;    
-    user-select: none;
-}
-
-#mapSvg {
-    display: none;
-}
-
 #toMapButton {
     display: none;
     position: absolute;
@@ -85,13 +78,36 @@ svg path {
     border-radius: 5px;
 }
 
+#startbtn{
+    color: white;
+    background-color: darkgreen;
+    font-family: ubuntuBold, sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
 
+
+/* World Map */
+
+#mapSvg {
+    display: none;
+}
 
 #toMapButton:hover {
     animation: colorChange 1s infinite;
     background-color: lightskyblue;
 }
 
+.mapClickable {
+    fill: darkgrey;
+}
+
+.mapClickable:hover {
+    fill: lawngreen;
+    transition: 0.6s;
+    cursor: pointer;
+}
 
 
 
@@ -116,12 +132,4 @@ svg path {
   }
 
 
-.clickable {
-    fill: darkgrey;
-}
 
-.clickable:hover {
-    fill: lawngreen;
-    transition: 0.6s;
-    cursor: pointer;
-}
